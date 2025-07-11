@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="otp-card">
+            <div class="card-header">
+                <h1>Verify your email address</h1>
+                <p>Please enter the 4-digit verification code that was sent to your email address</p>
+            </div>
+            
+            <div class="otp-form">
+                <div class="otp-inputs">
+                    <input type="text" class="otp-input" maxlength="1" id="otp-1" autocomplete="off">
+                    <input type="text" class="otp-input" maxlength="1" id="otp-2" autocomplete="off">
+                    <input type="text" class="otp-input" maxlength="1" id="otp-3" autocomplete="off">
+                    <input type="text" class="otp-input" maxlength="1" id="otp-4" autocomplete="off">
+                </div>
+                
+                <button class="verify-btn" id="verifyBtn">Verify OTP</button>
+                
+                <div class="message" id="message"></div>
+            </div>
+            
+            <div class="resend-section">
+                <p>Didn't receive the code? <span class="resend-link" id="resendLink">Resend</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
